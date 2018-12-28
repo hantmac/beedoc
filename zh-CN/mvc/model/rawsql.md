@@ -99,6 +99,7 @@ res, err := r.SetArgs("arg1", "arg2").Exec()
 
 #### Values / ValuesList / ValuesFlat
 
+
 Raw SQL 查询获得的结果集 value 为 `interface{}` 类型,NULL字段为 `nil`, 例如，如果你要将value赋值给struct中的某字段，需要根据结构体对应字段类型使用[断言](https://golang.org/ref/spec#Type_assertions)获取真实值。举例:`Name : m["Name"].(string)`
 > from beego 1.1.0
 > Values, ValuesList, ValuesFlat 的参数，可以指定返回哪些 Columns 的数据
